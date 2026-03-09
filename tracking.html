@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tracking | Year 11 Psychology</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="site-nav"></nav>
+<main>
+<div class="wrap">
+  <div class="sec-label">Your progress</div>
+  <h2 class="sec-title">Syllabus Tracking</h2>
+  <p class="sec-sub">Tick off each dot point as you feel confident with it. Progress saves in your browser. <span class="she">SHE</span> = Science as a Human Endeavour.</p>
+
+  <div class="prog-sticky">
+    <div class="prog-top">
+      <span class="prog-lbl" id="prog-txt">Overall progress</span>
+      <span class="prog-ct" id="prog-ct">0 / 0 completed</span>
+    </div>
+    <div class="prog-bar"><div class="prog-fill" id="prog-fill" style="width:0%"></div></div>
+  </div>
+
+  <div class="unit-label-divider">📘 Unit 1 — Individual Development</div>
+
+  <div class="cl-block open" id="cl1">
+    <div class="cl-head" onclick="tog('cl1')"><div class="cl-badge">1</div><h4>🧬 The Role of the Brain</h4><span class="cl-meta">11 dot points</span><span class="cl-chev">▾</span></div>
+    <div class="cl-items">
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Discuss the mind-versus-body problem — materialist approach (Galen) and dualistic approach (Descartes).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe early brain investigative techniques: phrenology (Gall) and experimental neurosurgery (Flourens &amp; Penfield).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Explain how neuroimaging techniques enhance understanding of the brain: PET, MRI, fMRI, EEG.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe the basic structure and function of the nervous system: CNS (brain + spinal cord) and PNS (somatic + autonomic).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe the structure of a neuron: axon, dendrites, cell body, myelin sheath and axon terminal.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Contrast sensory neurons, motor neurons and interneurons.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Explain that the brain can be viewed as discrete areas: hindbrain, midbrain and forebrain.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe the interacting roles of Broca's area, Wernicke's area and Geschwind's territory in language.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Historical brain knowledge came at the expense of risky and invasive practices.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Neuroimaging has improved neuropsychological knowledge and anatomy–psychology connections.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Localisation of brain function can predict cognitive and behavioural effects of brain damage.</label></div>
+    </div>
+  </div>
+
+  <div class="cl-block" id="cl2">
+    <div class="cl-head" onclick="tog('cl2')"><div class="cl-badge">2</div><h4>👶 Cognitive Development</h4><span class="cl-meta">11 dot points</span><span class="cl-chev">▾</span></div>
+    <div class="cl-items">
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe infancy and adolescence as periods of rapid development: myelination, synaptic pruning, forebrain development.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Explain neural plasticity — brain development (deprived vs enriched environments, sensitive/critical periods) and recovery from damage.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe the role of attachment in psychological development.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe the detrimental effects of early abuse or deprivation on cognitive development.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Discuss cognitive (Piaget), sociocultural (Vygotsky) and information processing theories of cognitive development.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Key attachment researchers: Lorenz (1937), Harlow (1958), Bowlby (1969), Ainsworth (1978).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Impact of digital technology on children's cognitive development.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Interaction between biologically defined critical periods and social/cultural contexts in adolescence.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Psychologists adhere to ethical principles when studying abused or deprived children.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Draw conclusions from secondary sources about technology's effect on adolescent cognitive development (correlational design).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Investigate the Stroop effect on processing time using an experimental research design.</label></div>
+    </div>
+  </div>
+
+  <div class="cl-block" id="cl3">
+    <div class="cl-head" onclick="tog('cl3')"><div class="cl-badge">3</div><h4>😴 Human Consciousness &amp; Sleep</h4><span class="cl-meta">16 dot points</span><span class="cl-chev">▾</span></div>
+    <div class="cl-items">
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe the continuum of arousal from sleep through to hyperarousal.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Discriminate between selective and divided attention.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Explain how brain structures and hormones regulate consciousness — hypothalamus/pineal gland (melatonin), thalamus, cortex and reticular formation.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe measurement techniques: EEG (brainwaves), EMG (muscle activity), EOG (eye movement).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe the sleep-wake cycle including REM and NREM stages.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Discuss the purpose of sleep — compare restoration theory and evolutionary theory.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe changes in the sleep-wake cycle across the lifespan, including the adolescent sleep-wake shift.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Identify physical and psychological consequences of total and partial sleep deprivation.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Compare sleep disorders: narcolepsy, sleep-onset insomnia, sleep apnoea and sleepwalking.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe treatment interventions: CBT for insomnia, bright light therapy for circadian phase disorders.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Modern society's priorities have changed the nature and quality of sleep.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Understanding sleep can inform policy, laws and workplace risk assessment.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Sleep could be adaptive; patterns change across the lifespan.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Investigate the relationship between sleep hours and another variable using a correlational design.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Investigate the effect of divided attention on memory, replicating Craik et al. (1996).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Interpret correlational data about the relationship between sleep hours and another variable.</label></div>
+    </div>
+  </div>
+
+  <div class="unit-label-divider">📗 Unit 2 — Individual Behaviour</div>
+
+  <div class="cl-block" id="cl4">
+    <div class="cl-head" onclick="tog('cl4')"><div class="cl-badge">4</div><h4>🧩 Intelligence</h4><span class="cl-meta">9 dot points</span><span class="cl-chev">▾</span></div>
+    <div class="cl-items">
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe the psychometric approach to intelligence (IQ).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe IQ tests: Stanford–Binet scale, WAIS-IV (adults), WISC-V (children).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Discuss the significance of the psychometric approach compared to information processing, Sternberg's triarchic theory, Gardner's multiple intelligences and Goleman's EQ.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Discuss the degree to which intelligence tests are valid and reliable.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Discuss the extent to which intelligence is inherited — twin, family and adoption studies (Bouchard et al. 1990).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> IQ and EQ testing can be misleading or inaccurate.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Applicability of intelligence theories across social and cultural contexts.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Evaluate the degree to which intelligence tests are culturally biased.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Nature–nurture debate regarding inherited vs learned intelligence.</label></div>
+    </div>
+  </div>
+
+  <div class="cl-block" id="cl5">
+    <div class="cl-head" onclick="tog('cl5')"><div class="cl-badge">5</div><h4>🔍 Diagnosis</h4><span class="cl-meta">8 dot points</span><span class="cl-chev">▾</span></div>
+    <div class="cl-items">
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Discriminate between adaptive and maladaptive behaviour.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Discuss concepts of normality: sociocultural, functional, historical, situational, medical and statistical.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe the concept of psychological disorder.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Compare DSM-5-TR (2022) and ICD-11 (2022) and their use by different professions.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe main disorder categories: schizophrenia spectrum, bipolar/depressive disorders, anxiety disorders, personality disorders.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Discuss the reliability and validity of diagnosis.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Diagnostic manuals and whether they enable valid explanations and reliable prognosis.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Influence of social, cultural and ethical factors on diagnosis.</label></div>
+    </div>
+  </div>
+
+  <div class="cl-block" id="cl6">
+    <div class="cl-head" onclick="tog('cl6')"><div class="cl-badge">6</div><h4>💊 Psychological Disorders &amp; Treatments</h4><span class="cl-meta">10 dot points</span><span class="cl-chev">▾</span></div>
+    <div class="cl-items">
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe the biopsychosocial approach to understanding psychological disorder.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Classify risk factors — biological (genes, sleep, substances), psychological (rumination, stress) and social (attachment, relationships).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe prevalence, symptoms and perceived causes of GAD and specific phobias.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe the impact of stigma on help-seeking behaviours.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Compare treatments: psychotherapies, pharmacotherapies, ECT and psychosurgery.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Explain the placebo effect.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Analyse data identifying the prevalence of psychological disorders in different cultures.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> The biopsychosocial approach draws on psychology, psychiatry and social work.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Appropriate support alleviates impacts on individuals, families and community.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Evaluate the most appropriate support interventions for various psychological disorders.</label></div>
+    </div>
+  </div>
+
+  <div class="cl-block" id="cl7">
+    <div class="cl-head" onclick="tog('cl7')"><div class="cl-badge">7</div><h4>❤️ Emotion &amp; Motivation</h4><span class="cl-meta">11 dot points</span><span class="cl-chev">▾</span></div>
+    <div class="cl-items">
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Compare two-factor theory (Schachter &amp; Singer 1962) and appraisal theory (Lazarus 1982) of emotion.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe physiological processes of emotion — autonomic arousal and the limbic system (thalamus, hypothalamus, amygdala, hippocampus, basal ganglia, cingulate gyrus).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe factors that affect happiness.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Interpret data from the emotive vs informative stimuli experiment (heart rate changes).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Explain subjective wellbeing (Diener 1984), psychological wellbeing (Ryff &amp; Keyes 1995) and broaden-and-build theory (Fredrickson 2004).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Explain mindfulness — attention and acceptance.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe the positive consequences of the flow experience (Nakamura &amp; Csikszentmihalyi 2002).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Compare achievement goal, cognitive evaluation (intrinsic/extrinsic) and self-efficacy theories of motivation.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Describe the role of goal setting in motivation (Locke 1996).</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label><span class="she">SHE</span> Neuroimaging suggests a biological basis for the experience of emotion.</label></div>
+      <div class="cl-item" onclick="tick(this)"><input type="checkbox"><label>Investigate the effect of emotive vs informative stimuli on heart rate.</label></div>
+    </div>
+  </div>
+</div>
+</main>
+<footer id="site-footer"></footer>
+<script src="shared.js"></script>
+<script>
+const KEY='yr11-psych-2026';
+function tog(id){document.getElementById(id).classList.toggle('open')}
+function tick(el){const cb=el.querySelector('input');cb.checked=!cb.checked;el.classList.toggle('done',cb.checked);save();upd()}
+function save(){const d={};document.querySelectorAll('.cl-item input').forEach((cb,i)=>d[i]=cb.checked);localStorage.setItem(KEY,JSON.stringify(d))}
+function load(){try{const d=JSON.parse(localStorage.getItem(KEY)||'{}');document.querySelectorAll('.cl-item input').forEach((cb,i)=>{if(d[i]){cb.checked=true;cb.closest('.cl-item').classList.add('done')}})}catch(e){}}
+function upd(){const all=document.querySelectorAll('.cl-item input'),done=document.querySelectorAll('.cl-item input:checked');const pct=all.length?Math.round(done.length/all.length*100):0;document.getElementById('prog-fill').style.width=pct+'%';document.getElementById('prog-ct').textContent=done.length+' / '+all.length+' completed';document.getElementById('prog-txt').textContent='Overall progress — '+pct+'%'}
+load();upd();
+</script>
+</body>
+</html>
